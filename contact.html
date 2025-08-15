@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - 🧁YAS Decadent Treats🧁</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">YAS Decadent Treats</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="javascript:void(0)" id="cart-toggle">Cart 🛒</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="contact-section">
+  <h2>Contact Us</h2>
+  <p>Email: <a href="mailto:info@yasdecadenttreats.co.za">info@yasdecadenttreats.co.za</a></p>
+  <p>Phone: +27 123 456 789</p>
+  <p>Visit us: 123 Decadent St, Sweet City</p>
+  <form>
+    <label>Name:</label><br>
+    <input type="text" placeholder="Your name"><br>
+    <label>Email:</label><br>
+    <input type="email" placeholder="Your email"><br>
+    <label>Message:</label><br>
+    <textarea placeholder="Your message" rows="5"></textarea><br>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 YAS Decadent Treats</p>
+</footer>
+
+<div id="cart-sidebar">
+  <h3>Your Cart</h3>
+  <ul id="cart-items"></ul>
+  <p>Total: R<span id="cart-total">0</span></p>
+  <button id="close-cart">Close</button>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>

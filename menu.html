@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu - YAS Decadent Treats</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo">🧁YAS Decadent Treats🧁</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="javascript:void(0)" id="cart-toggle">Cart 🛒</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="menu" id="menu">
+  <h2>Our Decadent Treats</h2>
+  <div class="cards">
+
+    <!-- Milkshake -->
+    <div class="card" data-name="Milkshake" data-price="45" data-flavors="Chocolate, Strawberry, Vanilla" data-img="images/difmilkshake.jpg">
+      <img src="images/difmilkshake.jpg" alt="difmilkshake">
+      <h3>Milkshake</h3>
+      <p>Click for details</p>
+    </div>
+
+    <!-- Waffles -->
+    <div class="card" data-name="Waffles" data-price="35" data-flavors="Chocolate, Caramel, Berry" data-img="images/waffles.jpg">
+      <img src="images/waffles.jpg" alt="waffles">
+      <h3>Waffles</h3>
+      <p>Click for details</p>
+    </div>
+
+    <!-- Cake Slice -->
+    <div class="card" data-name="Cake Slice" data-price="30" data-flavors="Chocolate, Red Velvet, Vanilla" data-img="images/cakeslice.jpg">
+      <img src="images/cakeslice.jpg" alt="Cake Slice">
+      <h3>Cake Slice</h3>
+      <p>Click for details</p>
+    </div>
+
+    <!-- Peppermint Tart -->
+    <div class="card" data-name="Peppermint Tart" data-price="40" data-flavors="Refreshing and sweet" data-img="images/peppermint.jpg">
+      <img src="images/peppermint.jpg" alt="Peppermint Tart">
+      <h3>Peppermint Tart</h3>
+      <p>Click for details</p>
+    </div>
+
+    <!-- Donuts -->
+    <div class="card" data-name="Donuts" data-price="15" data-flavors="Glazed, Chocolate, Sprinkles" data-img="images/donut.jpg">
+      <img src="images/colordonut.jpg" alt="color donut">
+      <h3>Donuts</h3>
+      <p>Click for details</p>
+    </div>
+
+    <!-- Muffins -->
+    <div class="card" data-name="Muffins" data-price="20" data-flavors="Chocolate, Blueberry, Banana" data-img="images/muffin.jpg">
+      <img src="images/muffin.jpg" alt="Muffin">
+      <h3>Muffins</h3>
+      <p>Click for details</p>
+    </div>
+
+    <!-- Milk Tart -->
+    <div class="card" data-name="Milk Tart" data-price="25" data-flavors="Classic South African dessert" data-img="images/milktart.jpg">
+      <img src="images/milktart.jpg" alt="Milk Tart">
+      <h3>Milk Tart</h3>
+      <p>Click for details</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Product Modal -->
+<div id="product-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="modal-img" src="" alt="Product">
+    <h3 id="modal-name"></h3>
+    <p id="modal-flavors"></p>
+    <p>Price: R<span id="modal-price"></span></p>
+    <label>Quantity: <input type="number" min="1" value="1" id="modal-qty"></label>
+    <button id="modal-add-cart">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cart Sidebar -->
+<div id="cart-sidebar">
+  <h3>Your Cart</h3>
+  <ul id="cart-items"></ul>
+  <p>Total: R<span id="cart-total">0</span></p>
+  <button id="close-cart">Close</button>
+</div>
+
+<footer>
+  <p>&copy; 2025 YAS Decadent Treats</p>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
